@@ -13,9 +13,16 @@ html, body {
 	height: 100%;
 	width: 100%;
 	background: red;
+	overflow: hidden;
 	.splash {
 		height: 100%;
 		width: 100%;
 		background: url("../images/splashImg.png");
+		background-size: cover;
+		background-position-y: 0px;
+		transtion: background-position 5s; 
+	}
+	.click {
+		background-position-y: 1000px;
 	}
 }
