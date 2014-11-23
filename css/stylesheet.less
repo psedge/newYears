@@ -14,15 +14,60 @@ html, body {
 	width: 100%;
 	background: red;
 	overflow: hidden;
-	.splash {
-		height: 100%;
-		width: 100%;
-		background: url("../images/splashImg.png");
-		background-size: cover;
-		background-position-y: 0px;
-		transtion: background-position 5s; 
+	background: url(../images/splashImg.png);
+	background-position: bottom;
+	background-size: cover;
+	.button {
+		position: absolute;
+		z-index: 3;
+		h1 {
+
+		}
 	}
+	.splash1 {
+		overflow: hidden;
+		position: absolute;
+		width: 1200px;
+		height: 2000px;
+		background: url(../images/splashImg.png);
+		margin-top: -2000px;
+		margin-left: -1200px;
+		-webkit-transition: all 35s linear;
+  		-moz-transition: all 35s linear;
+  		-o-transition: all 35s linear;
+  		transition: all 35s linear;
+  		z-index: 2;
+	}
+	.splash2 {
+		overflow: hidden;
+		position: absolute;
+		width: 1200px;
+		height: 2000px;
+		background: url(../images/splashImg.png);
+		margin-top: -50%;
+		margin-left: 100%;
+		-webkit-transition: all 35s linear;
+  		-moz-transition: all 35s linear;
+  		-o-transition: all 35s linear;
+  		transition: all 35s linear;
+	}
+
 	.click {
-		background-position-y: 1000px;
+		margin-top: 0px;
+		margin-left: 0px;
+	}
+	.click2 {
+		margin-left: 0%;
+	}
+}
+
+.topWrapper {
+	padding: 0px;
+	margin: 0px;
+	height: 1000px;
+	width: 100%;
+	background: green;
+	.topContent {
+
 	}
 }
