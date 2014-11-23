@@ -30,44 +30,31 @@
   <meta property="og:description" content="Project Discription"/>
   
   <!-- Pictures -->
-   <script src="js/jquery.collagePlus.js"></script>
-    <script src="js/jquery.removeWhitespace.js"></script>
-    <script src="js/jquery.collageCaption.js"></script>
-  <script src="js/pics.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/gridify.js"></script>
+  <script>
+    $(window).load(function() {
+    var options =
+    {
+      srcNode: 'img', // grid items (class, node)
+      margin: '20px', // margin in pixel, default: 0px
+      width: '250px', // grid item width in pixel, default: 220px
+      max_width: '',  // dynamic gird item width if specified, (pixel)
+      resizable: true,// re-layout if window resize
+      transition: 'all 0.5s ease' // support transition for CSS3, default: all 0.5s ease
+    }
+    $('.grid').gridify(options);
+    });
+  </script>
+    
 </head>
 <body>
 
 <div class="container splashWrap">
   <div class="col-med-12 splash">
-    <div class="Collage">
-      <img src="images/splash/1.png" alt="">
-      <img src="images/splash/2.png" alt="">
-      <img src="images/splash/3.png" alt="">
-      <img src="images/splash/4.png" alt="">
-      <img src="images/splash/5.png" alt="">
-      <img src="images/splash/6.png" alt="">
-      <img src="images/splash/7.png" alt="">
-      <img src="images/splash/8.png" alt="">
-      <img src="images/splash/9.png" alt="">
-      <img src="images/splash/10.png" alt="">
-      <img src="images/splash/11.png" alt="">
-      <img src="images/splash/12.png" alt="">
-      <img src="images/splash/13.png" alt="">
-      <img src="images/splash/14.png" alt="">
-      <img src="images/splash/15.png" alt="">
-      <img src="images/splash/16.png" alt="">
-      <img src="images/splash/17.png" alt="">
-      <img src="images/splash/18.png" alt="">
-      <img src="images/splash/19.png" alt="">
-      <img src="images/splash/20.png" alt="">
-      <img src="images/splash/21.png" alt="">
-      <img src="images/splash/22.png" alt="">
-      <img src="images/splash/23.png" alt="">
-    </div>
+
   </div>
 </div>
-
-
 
 </body>
 <!-- Bootstrap core JavaScript
