@@ -4,7 +4,37 @@ html, body {
 	height: 100%;
 	width: 100%;
 	font-size: 18px;
-	font-family: 'Lato', sans-serif !important;
+	font-family: 'Dosis', sans-serif !important;
+}
+
+nav {
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+	height: 120px;
+	background: white;
+	position: absolute;
+	h1 {
+		margin-left: 20px;
+		vertical-align: middle;
+		font-size: 32px;
+		display: inline;
+		color: #929292;
+		span {
+			color: #898989;
+			font-weight: 800;
+		}
+	}	
+	.logo {
+		margin-top: 10px;
+		img {
+			height: 100px;
+		}
+	}
+	.total {
+		line-height: 120px;
+		text-align: right;
+	}
 }
 
 .splashWrap {
@@ -13,7 +43,7 @@ html, body {
 	height: 100%;
 	width: 100%;
 	background: red;
-	// background: url(../images/splashImg.png);
+	background: url(../images/splashImg.png);
 	background-position: top;
 	background-size: cover;
 	overflow: hidden;
@@ -22,15 +52,16 @@ html, body {
 		padding: 6px;
 		width: 380px;
 		margin: 0px;
-		border-radius: 12px;
 		text-align: center;
 		top: 50%;
 		left: 50%;
+		min-width: 420px;
 		margin-top: -40px;
 		margin-left: -190px;
-		background: rgba(192,57,43, 0.8);
-		color: white;
-		font-size: 30px;
+		padding-bottom: 15px;
+		background: rgba(255, 255, 255, 1);
+		font-size: 38px;
+		color: #898989;
 	}
 }
 
@@ -51,7 +82,6 @@ html, body {
 	margin: 0px;
 	height: 800px;
 	width: 100%;
-	background: #F8FDFE;
 	.topContent {
 		h1 {
 			margin-top: 20px;
@@ -102,12 +132,14 @@ html, body {
 	}
 	#tier2 {
 		text-align: left;
+		background: #F8FDFE;
 	}
 	#tier3 {
 		text-align: right;
 	}
 	#tier4 {
 		text-align: left;
+		background: #F8FDFE;
 	}
 	#tier5 {
 		text-align: right;
