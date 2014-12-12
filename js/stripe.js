@@ -1,5 +1,5 @@
   var handler = StripeCheckout.configure({
-    key: 'pk_test_tMYhXmZ6NqCmbbMjjcjg9mOK',
+    key: 'pk_live_ASYn1sdSvyGNAMxVO1pFLjdk',
     image: 'images/mike.png',
     token: function(token) {
       // Use the token to create the charge with a server-side script.
@@ -15,6 +15,7 @@ $(document).ready(function(){
     handler.open({
       name: 'You are donating \u00A31',
       description: 'Thank you!',
+      currency: 'gbp',
       amount: 100
     });
     e.preventDefault();
@@ -28,6 +29,7 @@ $(document).ready(function(){
     handler.open({
       name: '2 Down it Tokens',
       description: 'You are donating \u00A35.',
+      currency: 'gbp',
       amount: 500
     });
     e.preventDefault();
@@ -41,6 +43,7 @@ $(document).ready(function(){
     handler.open({
       name: 'Get out of jail free card',
       description: 'You are donating \u00A310.',
+      currency: 'gbp',
       amount: 1000
     });
     e.preventDefault();
@@ -54,6 +57,7 @@ $(document).ready(function(){
     handler.open({
       name: 'Dominion over Worms',
       description: 'You are donating \u00A315.',
+      currency: 'gbp',
       amount: 1500
     });
     e.preventDefault();
@@ -67,6 +71,7 @@ $(document).ready(function(){
     handler.open({
       name: 'The Vibes Captain',
       description: 'You are donating \u00A315',
+      currency: 'gbp',
       amount: 1500
     });
     e.preventDefault();
@@ -80,6 +85,7 @@ $(document).ready(function(){
     handler.open({
       name: 'Be Mike Jones',
       description: 'You are donating \u00A315',
+      currency: 'gbp',
       amount: 1500
     });
     e.preventDefault();
@@ -93,6 +99,21 @@ $(document).ready(function(){
     handler.open({
       name: 'Tweak, the Performing Monkeys Token',
       description: 'You are donating \u00A315.',
+      currency: 'gbp',
+      amount: 1500
+    });
+    e.preventDefault();
+  });
+});
+
+//reward8
+$(document).ready(function(){
+  $('#tier8').on('click', function(e) {
+    // Open Checkout with further options
+    handler.open({
+      name: 'Gecko Master',
+      description: 'You are donatinqg \u00A315.',
+      currency: 'gbp',
       amount: 1500
     });
     e.preventDefault();
