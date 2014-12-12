@@ -13,7 +13,7 @@ $(document).ready(function(){
   $('#tier1').on('click', function(e) {
     // Open Checkout with further options
     handler.open({
-      name: 'You are donating \£1.',
+      name: 'You are donating \u00A31',
       description: 'Thank you!',
       amount: 100
     });
@@ -27,7 +27,7 @@ $(document).ready(function(){
     // Open Checkout with further options
     handler.open({
       name: '2 Down it Tokens',
-      description: 'You are donating \£5.',
+      description: 'You are donating \u00A35.',
       amount: 500
     });
     e.preventDefault();
@@ -40,7 +40,7 @@ $(document).ready(function(){
     // Open Checkout with further options
     handler.open({
       name: 'Get out of jail free card',
-      description: 'You are donating \£10.',
+      description: 'You are donating \u00A310.',
       amount: 1000
     });
     e.preventDefault();
@@ -53,7 +53,7 @@ $(document).ready(function(){
     // Open Checkout with further options
     handler.open({
       name: 'Dominion over Worms',
-      description: 'You are donating \£15.',
+      description: 'You are donating \u00A315.',
       amount: 1500
     });
     e.preventDefault();
@@ -66,7 +66,7 @@ $(document).ready(function(){
     // Open Checkout with further options
     handler.open({
       name: 'The Vibes Captain',
-      description: 'You are donating \£15',
+      description: 'You are donating \u00A315',
       amount: 1500
     });
     e.preventDefault();
@@ -79,7 +79,7 @@ $(document).ready(function(){
     // Open Checkout with further options
     handler.open({
       name: 'Be Mike Jones',
-      description: 'You are donating \£15',
+      description: 'You are donating \u00A315',
       amount: 1500
     });
     e.preventDefault();
@@ -92,7 +92,7 @@ $(document).ready(function(){
     // Open Checkout with further options
     handler.open({
       name: 'Tweak, the Performing Monkeys Token',
-      description: 'You are donating \£15.',
+      description: 'You are donating \u00A315.',
       amount: 1500
     });
     e.preventDefault();
