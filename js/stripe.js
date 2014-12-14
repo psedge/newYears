@@ -1,8 +1,9 @@
 var handler = StripeCheckout.configure({
     key: 'pk_live_ASYn1sdSvyGNAMxVO1pFLjdk',
+    //key: 'pk_test_tMYhXmZ6NqCmbbMjjcjg9mOK',
     image: 'images/mike.png',
     token: function(token) {
-        $.post('scripts/charge.php', {token: token.id, amount: amount}, function(response) {
+        $.post('scripts/charge.php', {token: token.id, amount: amount, meta: meta}, function(response) {
             var resp = JSON.parse(response);
             if (resp.status == 'success') {
                 //Do something for sucecss
@@ -16,6 +17,7 @@ var handler = StripeCheckout.configure({
 });
 
 var amount = 0;
+var meta = '';
 
 //reward1
 $(document).ready(function(){
@@ -28,6 +30,7 @@ $(document).ready(function(){
             amount: 100
         });
         amount = 100;
+        meta = 'Donation';
         e.preventDefault();
     });
 });
@@ -43,6 +46,7 @@ $(document).ready(function(){
             amount: 500
         });
         amount = 500;
+        meta = 'Down it Tokens';
         e.preventDefault();
     });
 });
@@ -58,6 +62,7 @@ $(document).ready(function(){
             amount: 1000
         });
         amount = 1000;
+        meta = 'Out-of-Jail card';
         e.preventDefault();
     });
 });
@@ -73,6 +78,7 @@ $(document).ready(function(){
             amount: 1500
         });
         amount = 1500;
+        meta = 'Dominion over Worms';
         e.preventDefault();
     });
 });
@@ -88,6 +94,7 @@ $(document).ready(function(){
             amount: 1500
         });
         amount = 1500;
+        meta = 'Captain d\'Vibes';
         e.preventDefault();
     });
 });
@@ -103,6 +110,7 @@ $(document).ready(function(){
             amount: 1500
         });
         amount = 1500;
+        meta = 'Mike Jones ';
         e.preventDefault();
     });
 });
@@ -118,6 +126,7 @@ $(document).ready(function(){
             amount: 1500
         });
         amount = 1500;
+        meta = 'Tweak performance';
         e.preventDefault();
     });
 });
@@ -133,6 +142,7 @@ $(document).ready(function(){
             amount: 1500
         });
         amount = 1500;
+        meta = 'Gecko Master';
         e.preventDefault();
     });
 });

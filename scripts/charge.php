@@ -28,7 +28,7 @@ Peter Sedgewick, TotoMoto
 
 require_once('Stripe.php');
 
-$liveMode = false;
+$liveMode = true;
 
 $response = array(
     'is_mike_jones_sexxy' => 'true',
@@ -39,14 +39,17 @@ if (isset($_POST['token']) && is_string($_POST['token']) && isset($_POST['amount
     $token = $_POST['token'];
     $amount = $_POST['amount'];
     //FIll in the correct API KEYS HERE. FIRST THE LIVE SECRET, THEN THE TEST SECRET.
-    $apiKey = $liveMode ? '' : '';
+    $apiKey = $liveMode ? 'sk_live_YsQThwalQs1gtQupYJaJDbzt' : 'sk_test_ApUpOAhvWq5uSbx01mBz5Mpm';
     Stripe::setApiKey($apiKey);
     try {
         Stripe_Charge::create(array(
             "amount" => $amount,
             "currency" => "gbp",
             "card" => $token,
-            "description" => "Happy New Years from the Vaseys <3"
+            "description" => "Happy New Years from the Vaseys <3",
+            "metadata" => array(
+                'string' => isset($_POST['meta']) ? $_POST['meta'] : ''
+            )
         ));
     } catch (Stripe_CardErrors $e) {
         $response['message'] = $e->getMessage();
